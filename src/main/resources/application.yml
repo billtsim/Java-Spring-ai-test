@@ -2,7 +2,16 @@ spring:
   ai:
     openai:
       api-key: sk-KJ46NrfEc8w54Cf55c8b003b0d1f4e7aB879C98bC41f135f
-      base-url: https://apikeyplus.com/v1
-application:
-  name: Java-Spring-ai-test
+      base-url: https://apikeyplus.com
+      chat:
+        options:
+          temperature: 0.3F
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_01
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
 
